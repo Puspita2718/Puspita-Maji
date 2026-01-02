@@ -7,6 +7,7 @@ export interface Project {
   impact: string;
   category: 'Software' | 'Hardware' | 'Theory';
   image: string;
+  link?: string;
 }
 
 export interface BlogPost {

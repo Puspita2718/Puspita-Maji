@@ -9,13 +9,14 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AIAssistant from './components/AIAssistant';
+import profile from '/src/assets/images/profile.jpg';
 
 const App: React.FC = () => {
   return (
     <div className="relative min-h-screen">
       <Navbar />
       <main>
-        <Hero />
+        <Hero photoSrc={profile} />
         <About />
         <Skills />
         <Projects />

@@ -1,7 +1,11 @@
 
 import React from 'react';
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  photoSrc?: string;
+}
+
+const Hero: React.FC<HeroProps> = ({ photoSrc = "/images/profile.jpg" }) => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Gradients */}
@@ -11,31 +15,48 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono mb-8 animate-fade-in">
-          <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-          AVAILABLE FOR INTERNSHIPS & RESEARCH
-        </div>
-        
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-white via-white to-slate-400 bg-clip-text text-transparent">
-          I build intelligent <br /> 
-          <span className="text-emerald-500 italic">systems</span> through code
-        </h1>
-        
-        <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Computer Science enthusiast specializing in Java & C development, 
-          Automata Theory, and Digital Systems Design. Based in India.
-        </p>
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
+        <div className="flex-1 text-center md:text-left">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono mb-8 animate-fade-in">
+            <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
+            AVAILABLE FOR INTERNSHIPS & RESEARCH
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-white via-white to-slate-400 bg-clip-text text-transparent">
+            I build intelligent <br /> 
+            <span className="text-emerald-500 italic">systems</span> through code
+          </h1>
+          
+          <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto md:mx-0 leading-relaxed">
+            Computer Science enthusiast specializing in Java & C development, 
+            Automata Theory, and Digital Systems Design. Based in India.
+          </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a 
-            href="#contact" 
-            className="w-full sm:w-auto px-8 py-4 bg-white text-slate-950 font-bold rounded-xl hover:bg-emerald-400 transition-all hover:-translate-y-1 shadow-lg shadow-emerald-500/20"
-          >
-            Let's Connect
-          </a>
-          <div className="px-6 py-4 text-slate-400 font-mono text-sm border border-white/10 rounded-xl bg-white/5 backdrop-blur-sm">
-            contact@puspita.dev
+          <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+            <a 
+              href="#contact" 
+              className="w-full sm:w-auto px-8 py-4 bg-white text-slate-950 font-bold rounded-xl hover:bg-emerald-400 transition-all hover:-translate-y-1 shadow-lg shadow-emerald-500/20"
+            >
+              Let's Connect
+            </a>
+            <div className="px-6 py-4 text-slate-400 font-mono text-sm border border-white/10 rounded-xl bg-white/5 backdrop-blur-sm">
+              contact@puspita.dev
+            </div>
+          </div>
+        </div>
+
+        <div className="flex-1 flex justify-center md:justify-end">
+          <div className="relative">
+            <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-emerald-500/20 shadow-2xl">
+              <img 
+                src={photoSrc} 
+                alt="Puspita Maji" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg">
+              <span className="text-white font-bold text-xl">👋</span>
+            </div>
           </div>
         </div>
       </div>

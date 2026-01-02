@@ -4,30 +4,33 @@ import { Project, SkillCategory, BlogPost } from './types';
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    title: 'High-Performance VHDL Multiplier',
-    description: 'Designed and simulated a 16-bit Wallace Tree Multiplier optimized for low-latency digital signal processing applications.',
+    title: 'Agrigro',
+    description: 'A responsive web application that offers agricultural guidance and resources to help improve farming efficiency and decision-making.',
     technologies: ['VHDL', 'ModelSim', 'Digital Logic'],
-    impact: 'Reduced computation delay by 15% compared to standard carry-save architectures.',
+    impact: 'Improves access to digital agricultural guidance for farmers.',
     category: 'Hardware',
-    image: 'https://picsum.photos/seed/vhdl/600/400'
+    image: '/images/agrigro.jpg',
+    link: 'https://github.com/Puspita2718/agrigroesih'
   },
   {
     id: '2',
-    title: 'Automata Theory Simulator',
-    description: 'A visual tool for creating and testing Finite Automata (DFA/NFA) and Pushdown Automata. Includes regex-to-NFA conversion.',
+    title: 'Pocket Doctor',
+    description: 'Pocket Doctor SMF is a healthcare web application that provides quick access to basic medical guidance and health-related information through a simple and user-friendly interface.',
     technologies: ['Java', 'Swing', 'GraphStream'],
-    impact: 'Used as a teaching aid for 100+ students in Formal Languages coursework.',
+    impact: 'The project improves accessibility to health information and demonstrates practical web development skills by building a real-world, socially useful application.',
     category: 'Theory',
-    image: 'https://picsum.photos/seed/automata/600/400'
+    image: '/images/pocket-doctor.jpg',
+    link: 'https://github.com/Puspita2718/pocketdoctorsmf/commit/fac45689ffddc30645bb48ff234cacea7dc4ff62'
   },
   {
     id: '3',
-    title: 'Concurrent Cache Optimizer',
-    description: 'A multithreaded cache simulation framework analyzing L1/L2 cache miss rates under various replacement policies.',
+    title: 'Weather',
+    description: 'A web app that shows current weather for any city using the OpenWeatherMap API.',
     technologies: ['C', 'Pthreads', 'Valgrind'],
-    impact: 'Achieved 40% faster simulation speeds through efficient use of mutex-free data structures.',
+    impact: 'Provides users with accurate, real-time weather data for any location worldwide.',
     category: 'Software',
-    image: 'https://picsum.photos/seed/cache/600/400'
+    image: '/images/weather.jpg',
+    link: 'https://github.com/Puspita2718/Weather-API?tab=readme-ov-file'
   }
 ];
 

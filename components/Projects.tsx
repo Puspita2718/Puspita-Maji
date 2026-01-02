@@ -43,8 +43,7 @@ const Projects: React.FC = () => {
               </div>
               
               <div className="p-8 flex flex-col flex-grow">
-                <div className="flex justify-between items-start mb-4">
-                  <span className="text-xs font-mono text-emerald-500 uppercase tracking-widest">{project.category}</span>
+                <div className="flex justify-end items-start mb-4">
                   <div className="flex gap-2">
                     {project.technologies.slice(0, 2).map(tech => (
                       <span key={tech} className="text-[10px] bg-white/5 px-2 py-1 rounded text-slate-300">{tech}</span>
@@ -63,7 +62,7 @@ const Projects: React.FC = () => {
                   </p>
                 </div>
 
-                <a href="#" className="flex items-center gap-2 text-sm font-bold text-white group-hover:gap-4 transition-all">
+                <a href={project.link || "#"} className="flex items-center gap-2 text-sm font-bold text-white group-hover:gap-4 transition-all">
                   View Project Case Study
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

@@ -19,10 +19,13 @@ const About: React.FC = () => {
             </h2>
             <div className="space-y-4 text-slate-400 leading-relaxed">
               <p>
-                I am Puspita Maji, a dedicated Computer Science student with a profound interest in the theoretical foundations of computing and the practical complexities of hardware design. My journey is driven by a curiosity about how abstract models like <span className="text-white font-medium italic">Automata Theory</span> translate into high-performance digital systems.
+                I’m Puspita Maji, a Computer Science student driven by a passion for crafting thoughtful digital experiences and building strong technical foundations. I enjoy working at the intersection of logic, design, and functionality—where clean code meets purposeful user interaction.
               </p>
               <p>
-                Currently, I focus on optimizing software performance through cache-aware programming and exploring the boundaries of concurrency. I believe that deep technical knowledge is the key to building truly intelligent and efficient tools.
+                My interests lie in web development and problem-solving, with hands-on experience in HTML, CSS, and JavaScript. Alongside building projects, I continuously strengthen my understanding of data structures, algorithms, and core computer science concepts, focusing on writing efficient, maintainable code.
+              </p>
+              <p>
+                Currently, I’m focused on sharpening my skills, expanding my project portfolio, and preparing for real-world development opportunities that challenge me to grow as an engineer.
               </p>
             </div>
 
